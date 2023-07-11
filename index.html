@@ -9,37 +9,45 @@
     <!-- SEO Description -->
     <title>Minreact</title>
     <meta name="description" content="Minimalist ReactJS Website Application" />
-    <meta name="robots" content="index,follow">
-    <link rel="canonical" href="http://localhost:8000/">
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="http://localhost:8000/" />
 
     <!-- indicates this will run in full screen mode on iOS devices -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- set color of top band in iOS, requires apple-mobile-web-app-capable to be set -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <!-- auto detect phone numbers on apple devices on this page -->
-    <meta name="format-detection" content="telephone=yes">
+    <meta name="format-detection" content="telephone=yes" />
     <!-- For mobile devices -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1"
+      user-scalable="no"
+    />
 
     <!-- Styling -->
     <link rel="icon" href="/Minreact/favicon.ico" />
-    <link rel="stylesheet" href="/Minreact/style.css">
+    <link rel="stylesheet" href="/Minreact/style.css" />
 
     <!-- Buat Deploy SPA di Github Page -->
     <script type="text/javascript">
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
-
   </head>
   <body>
     <noscript>
